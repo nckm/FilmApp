@@ -1,22 +1,19 @@
 $(document).ready(function(){
-    var url = 'http://www.omdbapi.com/?apikey=e836f52a';
+    var url = 'https://imdb-api.com/en/API/Search/k_38m4Ahun';
     var userInput, titleSearch;
 
     $("#searchBtn").click(function() {
+        location.href = "results.html";
+
         userInput = $("#input").val();
-        titleSearch = '&t=' + userInput;
+        titleSearch = '/' + userInput;
 
         $.ajax({
             url: url + titleSearch,
             contentType: "application/json",
             dataType: 'jsonp',
-            success: function(result){
-                $("#title").text(result.Title);
-                $("#poster").attr("src",result.Poster);
-                $("#year").text(result.Year);
-                $("#released").text(result.Released);
-                $("#genre").text(result.Genre);
-                $("#plot").text(result.Plot);
+            success: function(){
+                
             }
         })
     });
