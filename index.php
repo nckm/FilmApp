@@ -7,7 +7,6 @@
 		<!-- Bootstrap CSS CDN -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-
 		<!-- Place your kit's code here -->
     	<script src="https://kit.fontawesome.com/edf397c00e.js" crossorigin="anonymous"></script>
 	</head>
@@ -21,6 +20,9 @@
 				<div class="input-group-append">
 					<button type="button" class="btn btn-outline-secondary" id="searchBtn">Search</button>
 				</div>
+			</div>
+			<div class="card-container mt-5 mb-5">
+
 			</div>
 		</div> <!-- end of container -->
 
