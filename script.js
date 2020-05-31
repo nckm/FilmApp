@@ -1,20 +1,25 @@
 $(document).ready(function(){
-    var url = 'https://imdb-api.com/en/API/Search/k_38m4Ahun';
-    var userInput, titleSearch;
 
     $("#searchBtn").click(function() {
-        location.href = "results.html";
+        // location.href = "results.php";
 
-        userInput = $("#input").val();
-        titleSearch = '/' + userInput;
+		var $url = 'https://imdb-api.com/en/API/Search/k_38m4Ahun';
+
+		var $userInput = $("#input").val();
+        var $titleSearch = '/' + $userInput;
+		var $searchQuery = $url + $titleSearch;
+
 
         $.ajax({
-            url: url + titleSearch,
-            contentType: "application/json",
-            dataType: 'jsonp',
-            success: function(){
-                
-            }
-        })
+			type:'GET',
+			url: $searchQuery,
+			dataType: "json",
+			success: function (result) {
+				$.each(result.results, function(index, value) {
+					
+					console.log(value.title);
+				});
+			}
+		});
     });
 });
