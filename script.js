@@ -9,17 +9,28 @@ $(document).ready(function(){
         var $titleSearch = '/' + $userInput;
 		var $searchQuery = $url + $titleSearch;
 
+		var $settings = {
+			"url": $searchQuery,
+			"method": "GET",
+			"timeout": 0
+		};
 
-        $.ajax({
-			type:'GET',
-			url: $searchQuery,
-			dataType: "json",
-			success: function (result) {
-				$.each(result.results, function(index, value) {
-					
-					console.log(value.title);
-				});
-			}
+		$.ajax($settings).done(function (response) {
+			$.each(response.results, function (index, value) {
+				console.log(value.title);
+			})
 		});
+
+        // $.ajax({
+		// 	type:'GET',
+		// 	url: $searchQuery,
+		// 	dataType: "json",
+		// 	success: function (result) {
+		// 		$.each(result.results, function(index, value) {
+		//
+		// 			console.log(value.title);
+		// 		});
+		// 	}
+		// });
     });
 });
