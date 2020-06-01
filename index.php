@@ -22,6 +22,36 @@
 					<button type="button" class="btn btn-outline-secondary" id="searchBtn">Search</button>
 				</div>
 			</div>
+
+			<div class="card mt-5 mb-5">
+				<img class="card-img-top" src="">
+				<div class="card-body">
+					<h5 class="card-title"></h5>
+					<p class="card-text" id="title"></p>
+					<p class="card-text" id="year"></p>
+					<p class="card-text" id="rated"></p>
+					<p class="card-text" id="released"></p>
+					<p class="card-text" id="runtime"></p>
+					<p class="card-text" id="genre"></p>
+					<p class="card-text" id="director"></p>
+					<p class="card-text" id="writer"></p>
+					<p class="card-text" id="actors"></p>
+					<p class="card-text" id="plot"></p>
+					<p class="card-text" id="language"></p>
+					<p class="card-text" id="country"></p>
+					<p class="card-text" id="awards"></p>
+					<!-- Ratings -->
+					<p class="card-text" id="metascore"></p>
+					<p class="card-text" id="imdb-rating"></p>
+					<p class="card-text" id="imdb-votes"></p>
+					<p class="card-text" id="imdb-id"></p>
+					<p class="card-text" id="type"></p>
+					<p class="card-text" id="dvd"></p>
+					<p class="card-text" id="box-office"></p>
+					<p class="card-text" id="production"></p>
+					<p class="card-text" id="website"></p>
+				</div>
+			</div>
 		</div> <!-- end of container -->
 
 
