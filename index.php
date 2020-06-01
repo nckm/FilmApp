@@ -7,12 +7,13 @@
 		<!-- Bootstrap CSS CDN -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
+		<link rel="stylesheet" href="style.css">
 
 		<!-- Place your kit's code here -->
     	<script src="https://kit.fontawesome.com/edf397c00e.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<div class="container mt-5">
+		<div class="container-fluid mt-5">
 			<div class="jumbotron">
 				<h1><i class="fas fa-film"></i> Search IMDB Database</h1>
 			</div>
@@ -23,33 +24,17 @@
 				</div>
 			</div>
 
-			<div class="card mt-5 mb-5">
-				<img class="card-img-top" src="">
-				<div class="card-body">
-					<h5 class="card-title"></h5>
-					<p class="card-text" id="title"></p>
-					<p class="card-text" id="year"></p>
-					<p class="card-text" id="rated"></p>
-					<p class="card-text" id="released"></p>
-					<p class="card-text" id="runtime"></p>
-					<p class="card-text" id="genre"></p>
-					<p class="card-text" id="director"></p>
-					<p class="card-text" id="writer"></p>
-					<p class="card-text" id="actors"></p>
-					<p class="card-text" id="plot"></p>
-					<p class="card-text" id="language"></p>
-					<p class="card-text" id="country"></p>
-					<p class="card-text" id="awards"></p>
-					<!-- Ratings -->
-					<p class="card-text" id="metascore"></p>
-					<p class="card-text" id="imdb-rating"></p>
-					<p class="card-text" id="imdb-votes"></p>
-					<p class="card-text" id="imdb-id"></p>
-					<p class="card-text" id="type"></p>
-					<p class="card-text" id="dvd"></p>
-					<p class="card-text" id="box-office"></p>
-					<p class="card-text" id="production"></p>
-					<p class="card-text" id="website"></p>
+			<div class="col-12 mt-3">
+				<div class="card">
+					<div class="card-horizontal">
+						<div class="img-square-wrapper">
+							<img src="" class="poster">
+						</div>
+						<div class="card-body">
+							<h4 class="card-title"></h4>
+							<p class="card-text" id="plot"></p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div> <!-- end of container -->
